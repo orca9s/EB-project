@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "71825d181cea339db3917e73a5921d27e489edcc70b347d8076ec209c67bc594"
+            "sha256": "26615d68191babc3d651a16df96a6d457923a31d99d856a2fbcebd731c041a4d"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -47,12 +47,18 @@
             ],
             "version": "==2018.5"
         },
+        "uwsgi": {
+            "hashes": [
+                "sha256:d2318235c74665a60021a4fc7770e9c2756f9fc07de7b8c22805efe85b5ab277"
+            ],
+            "index": "pypi",
+            "version": "==2.0.17.1"
+        },
         "virtualenv": {
             "hashes": [
                 "sha256:2ce32cd126117ce2c539f0134eb89de91a8413a29baac49cbab3eb50e2026669",
                 "sha256:ca07b4c0b54e14a91af9f34d0919790b016923d157afda5efdde55c96718f752"
             ],
-            "markers": "python_version >= '2.7' and python_version != '3.2.*' and python_version != '3.1.*' and python_version != '3.0.*'",
             "version": "==16.0.0"
         },
         "virtualenv-clone": {
@@ -80,10 +86,10 @@
         },
         "botocore": {
             "hashes": [
-                "sha256:4152cd92e7f979707e35be7d4fa18f0435050b460e0a54cd88db27c2586d8886",
-                "sha256:dde120395f3775fa2273c1e0e5b909532f74461601d85c6c5f5f719991cffd22"
+                "sha256:24d91aab646c5f63b6ad6fd8907228c62d181cd1dc2309b54345663940514867",
+                "sha256:d10a7513f0e19eee9711ae39f3182b67442be9b2fa7054bd0ff8dc6c22856799"
             ],
-            "version": "==1.12.20"
+            "version": "==1.12.22"
         },
         "cached-property": {
             "hashes": [
