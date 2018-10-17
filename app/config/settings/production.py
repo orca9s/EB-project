@@ -1,11 +1,25 @@
+import sys
+
 from .base import *
 secrets = json.load(open(os.path.join(SECRETS_DIR, 'production.json')))
 
+RUNSERVER = 'runserver' in sys.argv
 DEBUG = False
 
 ALLOWED_HOSTS = secrets['ALLOWED_HOSTS']
 
+# runserver로 production환경을 실행할 경우
+if RUNSERVER:
+    DEBUG = True
+    ALLOWED_HOSTS = [
+        'localhost',
+        '127.0.0.1',
+    ]
+
 WSGI_APPLICATION = 'config.wsgi.production.application'
+INSTALLED_APPS += [
+    'storages',
+]
 
 DATABASES = secrets['DATABASES']
 
