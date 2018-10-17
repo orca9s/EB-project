@@ -28,9 +28,14 @@ DATABASES = secrets['DATABASES']
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(ROOT_DIR, '.static')
+
+# Media
+DEFAULT_FILE_STORAGE = 'config.storages.S3DefaultStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(ROOT_DIR, '.media')
 
+# AWS
+AWS_STORAGE_BUCKET_NAME = secrets["AWS_STORAGE_BUCKET_NAME"]
 
 # Log
 # /var/log/django 디렉토리가 존재하면 LOG_DIR로 그대로 사용

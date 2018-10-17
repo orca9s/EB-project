@@ -19,6 +19,21 @@ SECRETS_DIR = os.path.join(ROOT_DIR, '.secrets')
 secrets = json.load(open(os.path.join(SECRETS_DIR, 'base.json')))
 
 
+# Static
+STATIC_URL = '/static'
+ROOT_DIR = os.path.join(ROOT_DIR, '.static')
+MEDIA_URL = '/media'
+MEDIA_ROOT = os.path.join(ROOT_DIR, '.media')
+
+
+# AWS
+AWS_ACCESS_KEY_ID = secrets["AWS_ACCESS_KEY_ID"]
+AWS_SECRET_ACCESS_KEY = secrets["AWS_SECRET_ACCESS_KEY"]
+AWS_DEFAULT_ACL = secrets["AWS_DEFAULT_ACL"]
+AWS_S3_REGION_NAME = secrets["AWS_S3_REGION_NAME"]
+AWS_S3_SIGNATURE_VERSION = secrets["AWS_S3_SIGNATURE_VERSION"]
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
