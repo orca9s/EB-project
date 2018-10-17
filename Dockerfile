@@ -1,4 +1,4 @@
-FROM                orac9sg/eb-deploy-proejct:latest
+FROM                orca9sg/eb-deploy-project:base
 MAINTAINER          sang93423@gmail.com
 
 
