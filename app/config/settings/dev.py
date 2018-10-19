@@ -5,6 +5,7 @@ DEBUG = True
 # django-storages
 INSTALLED_APPS += [
     'storages',
+    'django_extensions',
 ]
 
 ALLOWED_HOSTS = []
@@ -23,8 +24,3 @@ DEFAULT_FILE_STORAGE = 'config.storages.S3DefaultStorage'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(ROOT_DIR, '.static')
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(ROOT_DIR, '.media')

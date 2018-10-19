@@ -21,6 +21,7 @@ INSTALLED_APPS += [
     'storages',
 ]
 
+# DB
 DATABASES = secrets['DATABASES']
 
 # Static files (CSS, JavaScript, Images)
