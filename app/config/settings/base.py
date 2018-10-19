@@ -33,6 +33,15 @@ AWS_DEFAULT_ACL = secrets["AWS_DEFAULT_ACL"]
 AWS_S3_REGION_NAME = secrets["AWS_S3_REGION_NAME"]
 AWS_S3_SIGNATURE_VERSION = secrets["AWS_S3_SIGNATURE_VERSION"]
 
+# Auth
+ADMIN_USERNAME = 'jsm'
+ADMIN_PASSWORD = 'pbkdf2_sha256$120000$BMclEuCnaNhT$a2xsVZFNpbC7KQRX9Bfjf1lVejpx4TFr2vOWV6K0ra0='
+AUTH_USER_MODEL = 'members.User'
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'members.backends.SettingsBackend',
+]
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
