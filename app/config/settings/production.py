@@ -30,6 +30,7 @@ DATABASES = secrets['DATABASES']
 
 # Media
 DEFAULT_FILE_STORAGE = 'config.storages.S3DefaultStorage'
+STATICFILES_STORAGE = 'config.storages.S3StaticStorage'
 
 # AWS
 AWS_STORAGE_BUCKET_NAME = secrets["AWS_STORAGE_BUCKET_NAME"]
